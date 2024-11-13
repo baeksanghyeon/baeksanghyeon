@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>커피 주문기</title>
+    <style>
+        #container {
+            width: 900px;
+            height: 900px;
+            margin: 0px auto;
+            padding: 30px;
+            margin-top: 50px;
+            border: 10px solid #eee;
+        }
+
+        #title {
+            position: relative;
+            width: 500px;
+            height: 50px;
+            top: -100px;
+            left: 200px;
+            border: 5px solid #078245;
+            border-radius: 50px;
+            background-color: #08b581;
+            color: rgb(255, 255, 255);
+            padding: 10px;
+            text-align: center;
+        }
+
+        #coffees {
+            width: 650px;
+            margin: 0px auto;
+        }
+
+        .coffee {
+            width: 150px;
+            float: left;
+            /* display: inline-block; */
+            padding: 10px;
+            margin: 20px;
+            border: 1px solid #aaa;
+            border-radius: 10px;
+            background-color: #aaa;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="container">
+        <h1 id="title"> 커피 주문기</h1>
+        <div id="coffees">
+            <div class="coffee">
+                <a href="/Coffee_koisk/americano.html">
+                <img src="images/아메리카노.jpg" width="100">
+                </a>
+                <p>아메리카노</p>
+                <p>가격 : <span>2,000원</span></p>
+                <p>수량 : <span>20개</span></p>
+                <button onclick="showMenu()">주문</button>
+            </div>
+            <div class="coffee">
+                <a href="/Coffee_koisk/moca.html">
+                <img src="images/모카.jpg" width="100">
+                </a>
+                <p>모카</p>
+                <p>가격 : <span>2,000원</span></p>
+                <p>수량 : <span>20개</span></p>
+                <button onclick="showMenu()">주문</button>
+            </div>
+            <div class="coffee">
+                <a href="/Coffee_koisk/latte.html">
+                <img src="images/라떼.jpg" width="100">
+                </a>
+                <p>라떼</p>
+                <p>가격 : <span>2,000원</span></p>
+                <p>수량 : <span>20개</span></p>
+                <button onclick="showMenu()">주문</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    function showMenu() {
+        alert("모카커피 선택")
+    }
+</script>
+
+</html>
